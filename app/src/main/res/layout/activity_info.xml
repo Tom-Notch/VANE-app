@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:hint="Age"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="240dp"/>
+
+    <EditText
+        android:id="@+id/edt_gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:hint="Gender"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/edt_age"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_height"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:hint="Height"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/edt_gender"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/edt_weight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:hint="Weight"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/edt_height"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit your information!"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/edt_weight"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

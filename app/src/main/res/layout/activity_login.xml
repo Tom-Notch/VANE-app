@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/edt_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        android:hint="@string/account"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="320dp"/>
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textColor="@color/teal_700"
+        android:hint="@string/password"
+        android:layout_below="@+id/edt_account"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Login your account!"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/edt_pw"
+        android:layout_marginTop="40dp"
+        />
+
+
+</RelativeLayout>
