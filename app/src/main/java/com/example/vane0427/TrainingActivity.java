@@ -47,7 +47,7 @@ public class TrainingActivity extends AppCompatActivity implements MediaCaptureC
 	public PrintWriter out;
 	public BufferedReader in;
 	private static final int TCP_SERVER_PORT = 9999;
-	private static final String TCP_SERVER_IP = "192.168.137.1";
+	private static final String TCP_SERVER_IP = "192.168.137.1"; // server ip is here
 	boolean isTime = false;
 	int totalCount = 0;
 	int time = 0;
@@ -103,7 +103,6 @@ public class TrainingActivity extends AppCompatActivity implements MediaCaptureC
 		setContentView(R.layout.activity_training);
 		sTrainingActivity = this;
 		Log.v(TAG, "=>onCreate MediaCapture::getLibVersion()=" + MediaCapture.getLibVersion());
-		//		getWindow().requestFeature(Window.FEATURE_PROGRESS);
 		getWindow().setFeatureInt(Window.FEATURE_PROGRESS, Window.PROGRESS_VISIBILITY_ON);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -115,7 +114,6 @@ public class TrainingActivity extends AppCompatActivity implements MediaCaptureC
 		MediaCapture.RequestPermission(this, mConfig.getCaptureSource());
 
 		capturer.Open(null, this);
-		//		textView = findViewById(R.id.txt_train);
 		Bundle bundle = getIntent().getExtras();
 		time = bundle.getInt("Time");
 		num = bundle.getInt("Number");
@@ -127,7 +125,6 @@ public class TrainingActivity extends AppCompatActivity implements MediaCaptureC
 		Log.e(TAG, "onCreate: orderIndex = " + order);
 		Log.e(TAG, "onCreate: typeIndex = " + type);
 		Log.e(TAG, "onCreate: isTime = " + isTime);
-		//		textView.setText(time + "\n" + num + "\n" + order);
 		mButtonStart = findViewById(R.id.btn_start);
 		mButtonStart.setOnClickListener(new View.OnClickListener()
 		{
@@ -281,6 +278,7 @@ public class TrainingActivity extends AppCompatActivity implements MediaCaptureC
 		super.onDestroy();
 	}
 
+	// for socket connection decode
 	public String intToStringUTF8(int data)
 	{
 		byte[] bytes = new byte[1];
