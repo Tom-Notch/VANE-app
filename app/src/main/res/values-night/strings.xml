@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tap_to_enter_vane_heath">Tap to enter VANE Heath</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="you_haven_t_done_any_exercise_today">You have not done any exercise today…</string>
+    <string name="do_the_exercise_now">Do the exercise now!!</string>
+    <string name="see_the_exercise_calendar">See the exercise calendar…</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="submit_your_information">Submit your information!</string>
+    <string name="which_exercise_do_you_want_to_do_today">Which exercise do you want to do today?</string>
+    <string name="squat">Squat</string>
+    <string name="push_up">Push-up</string>
+    <string name="which_training_mode_do_you_prefer">Which training mode do you prefer?</string>
+    <string name="training_base_on_time">Training base on time!</string>
+    <string name="training_base_on_number">Training base on number!</string>
+    <string name="how_long_do_you_want_to_train">How long do you want to train?</string>
+    <string name="finish">Finish!</string>
+    <string name="how_many_times_do_you_want_to_train">How many times do you want to train?</string>
+    <string name="login_your_account">Login your account!</string>
+</resources>

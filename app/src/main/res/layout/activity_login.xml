@@ -33,7 +33,7 @@
         android:id="@+id/btn_log"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Login your account!"
+        android:text="@string/login_your_account"
         android:textSize="18sp"
         android:textColor="#fff"
         android:textAllCaps="false"
@@ -42,5 +42,10 @@
         android:layout_marginTop="40dp"
         />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_logo"
+        android:layout_marginTop="80dp"/>
 
 </RelativeLayout>

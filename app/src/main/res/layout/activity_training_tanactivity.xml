@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingTANActivity"
+    android:padding="32dp">
+
+    <ImageView
+        android:id="@+id/img_hip_bridge"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_bridge"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_tan_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_many_times_you_want_to_do"
+        android:textSize="22sp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@+id/img_hip_bridge"
+        android:layout_marginTop="15dp"/>
+
+    <Spinner
+        android:id="@+id/spn_tan_number"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_tan_number"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/trainingNumberType"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/txt_tan_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/how_long_do_you_want_to_last_each_time"
+        android:textSize="22sp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@+id/spn_tan_number"
+        android:layout_marginTop="25dp"/>
+
+    <Spinner
+        android:id="@+id/spn_tan_time"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_tan_time"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/trainingTimeType"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/txt_tan_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/which_order_do_you_like_to_train_in"
+        android:textSize="22sp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@+id/spn_tan_time"
+        android:layout_marginTop="25dp"/>
+
+    <Spinner
+        android:id="@+id/spn_tan_order"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_tan_order"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/trainingOrderType"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/btn_tan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/finish"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/spn_tan_order"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

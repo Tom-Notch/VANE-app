@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingSelectActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+        <TextView
+            android:id="@+id/txt_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/which_exercise_do_you_want_to_do_today"
+            android:textSize="32sp"
+            android:textColor="@color/teal_700"
+            android:layout_marginTop="32sp"/>
+
+        <ImageView
+            android:id="@+id/img_squat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_squat"
+            android:layout_below="@+id/txt_select"
+            android:layout_marginTop="48sp"/>
+
+        <TextView
+            android:id="@+id/txt_squat"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="@string/squat"
+            android:textSize="28sp"
+            android:textColor="@color/teal_700"
+            android:layout_below="@+id/img_squat"
+            android:layout_marginTop="-42dp"/>
+
+        <ImageView
+            android:id="@+id/img_push_up"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_pushup"
+            android:layout_below="@+id/txt_squat"/>
+
+        <TextView
+            android:id="@+id/txt_push_up"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="@string/push_up"
+            android:textSize="28sp"
+            android:textColor="@color/teal_700"
+            android:layout_below="@id/img_push_up"
+            android:layout_marginTop="-56dp"/>
+
+        <ImageView
+            android:id="@+id/img_hip_bridge"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_bridge"
+            android:layout_below="@+id/txt_push_up"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="@string/hip_bridge"
+            android:textSize="28sp"
+            android:textColor="@color/teal_700"
+            android:layout_below="@id/img_hip_bridge"
+            android:layout_marginTop="-56dp"/>
+
+        <Button
+            android:id="@+id/btn_squat"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#00FFFFFF"
+            android:layout_below="@+id/txt_select"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginStart="99dp" />
+
+        <Button
+            android:id="@+id/btn_push_up"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#00FFFFFF"
+            android:layout_below="@+id/btn_squat"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginStart="99dp" />
+
+        <Button
+            android:id="@+id/btn_hip_bridge"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#00FFFFFF"
+            android:layout_below="@+id/btn_push_up"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="99dp"
+            android:layout_marginStart="99dp" />
+
+    </RelativeLayout>
+</ScrollView>

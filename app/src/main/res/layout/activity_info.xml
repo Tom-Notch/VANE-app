@@ -11,8 +11,8 @@
         android:id="@+id/edt_age"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textSize="18dp"
-        android:hint="Age"
+        android:textSize="18sp"
+        android:hint="@string/age"
         android:paddingLeft="10dp"
         android:layout_marginTop="240dp"/>
 
@@ -20,8 +20,8 @@
         android:id="@+id/edt_gender"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textSize="18dp"
-        android:hint="Gender"
+        android:textSize="18sp"
+        android:hint="@string/gender"
         android:paddingLeft="10dp"
         android:layout_below="@+id/edt_age"
         android:layout_marginTop="15dp"/>
@@ -30,8 +30,8 @@
         android:id="@+id/edt_height"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textSize="18dp"
-        android:hint="Height"
+        android:textSize="18sp"
+        android:hint="@string/height"
         android:paddingLeft="10dp"
         android:layout_below="@+id/edt_gender"
         android:layout_marginTop="15dp"/>
@@ -40,8 +40,8 @@
         android:id="@+id/edt_weight"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textSize="18dp"
-        android:hint="Weight"
+        android:textSize="18sp"
+        android:hint="@string/weight"
         android:paddingLeft="10dp"
         android:layout_below="@+id/edt_height"
         android:layout_marginTop="15dp"/>
@@ -50,13 +50,19 @@
         android:id="@+id/btn_info"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Submit your information!"
+        android:text="@string/submit_your_information"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textAllCaps="false"
         android:background="@color/teal_700"
         android:layout_below="@+id/edt_weight"
         android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_logo"
+        android:layout_marginTop="50dp"/>
 
 
 </RelativeLayout>

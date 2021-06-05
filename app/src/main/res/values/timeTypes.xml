@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trainingTimeType">
+        <item>1s</item>
+        <item>2s</item>
+        <item>3s</item>
+        <item>4s</item>
+        <item>5s</item>
+        <item>6s</item>
+        <item>8s</item>
+        <item>10s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>40s</item>
+        <item>50s</item>
+        <item>1min</item>
+        <item>1.5min</item>
+        <item>2min</item>
+        <item>3min</item>
+        <item>5min</item>
+    </string-array>
+</resources>

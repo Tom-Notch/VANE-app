@@ -5,7 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:padding="15dp">
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/txt_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_haven_t_done_any_exercise_today"
+        android:textSize="36sp"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:id="@+id/img_preExercise"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:src="@mipmap/ic_before_exercise"
+        android:layout_below="@+id/txt_home"
+        android:layout_marginTop="56dp"/>
+
+    <Button
+        android:id="@+id/btn_doExercise"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/do_the_exercise_now"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/img_preExercise"
+        android:layout_marginTop="52dp"/>
+
+    <Button
+        android:id="@+id/btn_motivation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/see_the_exercise_calendar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/btn_doExercise"
+        android:layout_marginTop="32dp"/>
 
 
 

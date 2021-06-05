@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home2Activity"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/txt_home2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_have_done_any_exercise_today"
+        android:textSize="36sp"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:id="@+id/img_preExercise2"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:src="@mipmap/ic_after_exercise"
+        android:layout_below="@+id/txt_home2"
+        android:layout_marginTop="56dp"/>
+
+    <Button
+        android:id="@+id/btn_doExercise2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/do_the_exercise_now"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/img_preExercise2"
+        android:layout_marginTop="52dp"/>
+
+    <Button
+        android:id="@+id/btn_motivation2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/see_the_exercise_calendar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:layout_below="@+id/btn_doExercise2"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

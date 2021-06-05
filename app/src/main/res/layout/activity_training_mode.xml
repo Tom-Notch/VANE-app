@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingModeActivity"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/txt_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/which_training_mode_do_you_prefer"
+        android:textSize="32sp"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="32dp"/>
+
+    <ImageView
+        android:id="@+id/img_time"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_clock"
+        android:layout_below="@id/txt_mode"
+        android:layout_marginTop="48dp"/>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="@string/training_base_on_time"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@+id/img_time"
+        android:layout_marginTop="-42dp"/>
+
+    <ImageView
+        android:id="@+id/img_count"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:src="@mipmap/ic_count"
+        android:layout_below="@+id/txt_time"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="@string/training_base_on_number"
+        android:textSize="24sp"
+        android:textColor="@color/teal_700"
+        android:layout_below="@+id/img_count"
+        android:layout_marginTop="-38dp"/>
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:layout_below="@id/txt_mode"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp" />
+
+    <Button
+        android:id="@+id/btn_count"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:layout_below="@+id/btn_time"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="99dp"
+        android:layout_marginStart="99dp" />
+
+</RelativeLayout>
